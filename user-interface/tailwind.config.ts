@@ -29,9 +29,8 @@ export default {
       },
 
       backgroundImage: {
-        pattern: "url('/images/pattern.png')",
-        "pattern-2": "url('/images/pattern-bg.png')",
-        "pattern-3": "url('/images/hero-img.png')",
+        "hero-section": "url('/images/hero-img.png')",
+        "faq-hero-section": "url('/images/faq-hero-img.jpg')",
       },
 
       borderRadius: {

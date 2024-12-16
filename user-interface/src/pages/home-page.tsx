@@ -1,7 +1,13 @@
 import React from "react";
 
+import HeroSection from "@/components/roots/home/hero-section";
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <main className="h-[200vh]">
+      <HeroSection />
+    </main>
+  );
 };
 
 export default HomePage;
