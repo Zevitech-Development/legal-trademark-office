@@ -35,8 +35,8 @@ const FaqsPage = () => {
             Have questions or feeling stuck? Our FAQ section is here to provide
             clear and concise answers to all your concerns in one convenient
             place. Whether you&apos;re navigating a process or seeking guidance,
-            you'll find helpful tips, detailed solutions, and expert advice to
-            move forward with confidence. We're dedicated to supporting you
+            you&apos;ll find helpful tips, detailed solutions, and expert advice to
+            move forward with confidence. We&apos;re dedicated to supporting you
             every step of the way.
           </p>
         </div>
