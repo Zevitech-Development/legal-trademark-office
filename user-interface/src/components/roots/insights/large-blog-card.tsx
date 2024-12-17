@@ -6,9 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import BlogImage from "../../../../public/images/blog-image-01.jpg";
 import { ArrowUpRight } from "lucide-react";
 
-type Props = {};
-
-const LargeBlogCard = ({}: Props) => {
+const LargeBlogCard = () => {
   return (
     <Card className="w-full bg-transparent shadow-none rounded-none col-span-1 flex flex-col gap-8 border-none">
       <CardHeader

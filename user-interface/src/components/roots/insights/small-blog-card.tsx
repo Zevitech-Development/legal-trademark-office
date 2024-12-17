@@ -5,10 +5,7 @@ import { Badge } from "@/components/ui/badge";
 
 import BlogImage from "../../../../public/images/blog-image-01.jpg";
 
-
-type Props = {};
-
-const SmallBlogCard = ({}: Props) => {
+const SmallBlogCard = () => {
   return (
     <Card className="w-full bg-transparent flex md:flex-row flex-col gap-8 border px-4 pt-4 rounded-md">
       <CardHeader
