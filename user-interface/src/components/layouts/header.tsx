@@ -9,6 +9,7 @@ import Logo from "../../../public/logos/logo.svg";
 import { HeaderPagesNavigationData } from "@/constants/layout-data";
 import { Button } from "../ui/button";
 import { Headset } from "lucide-react";
+import { Separator } from "../ui/separator";
 
 const Header = () => {
   const pathname = usePathname();
@@ -30,7 +31,7 @@ const Header = () => {
         </Link>
 
         {/* PAGE NAVIGATION LINKS */}
-        <ul className="lg:flex items-center gap-8 translate-x-12 hidden">
+        <ul className="lg:flex items-center gap-8 translate-x-16 hidden">
           {HeaderPagesNavigationData.map((pages, index) => (
             <Link key={index} passHref href={pages.path}>
               <li
@@ -47,14 +48,25 @@ const Header = () => {
         </ul>
 
         {/* CALL TO ACTION BUTTON */}
-        <div className="lg:flex items-center gap-2 hidden">
-          <Button className="font-inter h-[50px] rounded-sm px-4 border-2 border-primary-theme text-primary-theme tracking-wide hover:bg-blue-100 text-[16px] leading-[24px]">
-            <Headset />
-            Contant Us
-          </Button>
-          <Button className="font-inter h-[50px] rounded-sm px-8 bg-primary-theme text-white tracking-wide hover:bg-primary-hovered text-[16px] leading-[24px]">
-            Trademark Now
-          </Button>
+        <div className="lg:flex items-center gap-4 hidden">
+          <Link
+            href={"/contact-us"}
+            className="flex flex-col group"
+          >
+            <p className="font-inter font-bold text-[18px] text-heading-color leading-[24px]">
+              Contact Us
+            </p>
+            <Separator className="bg-heading-color h-[3px] rounded-lg group-hover:translate-y-[2px] animation-standard" />
+          </Link>
+          <Link
+            href={"/registration/trademark/step-1"}
+            className="flex flex-col group"
+          >
+            <p className="font-inter font-bold text-[18px] text-primary-theme leading-[24px]">
+              Register Your Trademark Now
+            </p>
+            <Separator className="bg-primary-theme h-[3px] rounded-lg group-hover:translate-y-[2px] animation-standard" />
+          </Link>
         </div>
       </div>
     </header>
